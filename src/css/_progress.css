@@ -1,19 +1,19 @@
 progress {
-  @apply h-3 rounded-full overflow-hidden;
+  @apply font-avantGardeRegular h-3 rounded-full overflow-hidden;
 }
 
 progress::-webkit-progress-bar {
-  @apply bg-gray-200;
+  @apply font-avantGardeRegular bg-gray-200;
 }
 
 progress::-webkit-progress-value {
-  @apply bg-blue-500;
+  @apply font-avantGardeRegular bg-blue-500;
 }
 
 progress::-moz-progress-bar {
-  @apply bg-blue-500;
+  @apply font-avantGardeRegular bg-blue-500;
 }
 
 progress::-ms-fill {
-  @apply bg-blue-500 border-0;
+  @apply font-avantGardeRegular bg-blue-500 border-0;
 }

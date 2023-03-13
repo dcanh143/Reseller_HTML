@@ -1,0 +1,15 @@
+@font-face {
+  font-family: VIEAvantGardeRegular;
+  src: url("../public/Avant-Garde-Font/vie-avantgarde.woff") format("woff");
+}
+
+@font-face {
+  font-family: VIEAvantGardeBold;
+  src: url("../public/Avant-Garde-Font/vie-avantgardebold.woff") format("woff");
+}
+
+@font-face {
+  font-family: VIEAvantGardeDemibold;
+  src: url("../public/Avant-Garde-Font/vie-avantgardedemibold.woff")
+    format("woff");
+}

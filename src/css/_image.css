@@ -1,7 +1,7 @@
 .image {
-  @apply block relative;
+  @apply font-avantGardeRegular block relative;
 }
 
 .image img {
-  @apply block h-auto w-full max-w-full;
+  @apply font-avantGardeRegular block h-auto w-full max-w-full;
 }

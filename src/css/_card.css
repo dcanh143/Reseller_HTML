@@ -1,47 +1,48 @@
 .card {
-  @apply bg-white border border-gray-100 rounded;
+  @apply font-avantGardeRegular bg-white border border-gray-100 rounded;
 }
 
 .card.has-table .card-content {
-  @apply p-0;
+  @apply font-avantGardeRegular p-0;
 }
 
 .card-content {
-  @apply p-6;
+  @apply font-avantGardeRegular p-6;
 }
 
 .card-content hr {
-  @apply my-6 -mx-6;
+  @apply font-avantGardeRegular my-6 -mx-6;
 }
 
 .card.empty .card-content {
-  @apply text-center py-12 text-gray-500;
+  @apply font-avantGardeRegular text-center py-12 text-gray-500;
 }
 
 .card-header {
-  @apply flex items-stretch border-b border-gray-100;
+  @apply font-avantGardeRegular flex items-stretch border-b border-gray-100;
 }
 
-.card-header-title, .card-header-icon {
-  @apply flex items-center py-3 px-4;
+.card-header-title,
+.card-header-icon {
+  @apply font-avantGardeRegular flex items-center py-3 px-4;
 }
 
 .card-header-title {
-  @apply flex-grow font-bold ;
+  @apply flex-grow font-avantGardeBold;
 }
 
 .card-header-icon {
-  @apply justify-center;
+  @apply font-avantGardeRegular justify-center;
 }
 
 .widget-label h3 {
-  @apply text-lg leading-tight text-gray-500;
+  @apply font-avantGardeRegular text-lg leading-tight text-gray-500;
 }
 
 .widget-label h1 {
-  @apply text-3xl leading-tight font-semibold;
+  @apply text-3xl leading-tight font-avantGardeSemibold;
 }
 
 .form-screen .card {
-  @apply w-11/12 lg:w-5/12 shadow-2xl rounded-lg;
+  @apply font-avantGardeRegular w-11/12 lg:w-5/12 shadow-2xl rounded-lg;
 }
