@@ -1,5 +1,5 @@
 .aside {
-  @apply font-avantGardeRegular w-60 -left-60 fixed top-0 z-40 h-screen bg-gray-800 transition-all lg:left-0;
+  @apply font-avantGardeRegular w-64 -left-64 fixed top-0 z-40 h-screen bg-gray-800 transition-all lg:left-0 overflow-auto;
 }
 
 .aside-tools {
@@ -11,11 +11,11 @@
 }
 
 .aside-mobile-expanded .navbar {
-  @apply font-avantGardeRegular ml-60;
+  @apply font-avantGardeRegular ml-64;
 }
 
 .aside-mobile-expanded #app {
-  @apply font-avantGardeRegular ml-60;
+  @apply font-avantGardeRegular ml-64;
 }
 
 .aside-mobile-expanded,
@@ -24,11 +24,15 @@
 }
 
 .menu-label {
-  @apply font-avantGardeRegular p-3 text-xs uppercase text-gray-400;
+  @apply font-avantGardeRegular p-3 text-xs uppercase bg-gray-700/50 text-gray-400;
 }
 
 .menu-list li a {
-  @apply font-avantGardeRegular py-2 flex text-gray-300;
+  @apply font-avantGardeRegular py-2 flex text-gray-300 hover:bg-gray-600 hover:bg-opacity-50;
+}
+
+.menu-item-img {
+  @apply w-7 mx-3;
 }
 
 .menu-list li > a {
@@ -36,7 +40,7 @@
 }
 
 .menu-list li a .menu-item-label {
-  @apply font-avantGardeRegular flex-grow;
+  @apply font-avantGardeSemibold text-sm text-gray-300 flex-grow;
 }
 
 .menu-list li a .icon {
@@ -44,7 +48,7 @@
 }
 
 .menu-list li.active > a {
-  @apply font-avantGardeRegular bg-gray-700;
+  @apply font-avantGardeRegular text-white;
 }
 
 .menu-list li ul {
@@ -56,5 +60,9 @@
 }
 
 .menu-list li.active ul {
-  @apply font-avantGardeRegular block bg-gray-600;
+  @apply font-avantGardeRegular block bg-gray-700/50;
 }
+
+/* .menu-list li.active ul li a span {
+  @apply font-avantGardeSemibold text-white;
+} */

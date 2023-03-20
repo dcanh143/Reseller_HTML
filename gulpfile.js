@@ -127,8 +127,12 @@ const concatHtml = (file) => {
 
 /* Img */
 
-const copyImg = () => {
-  return src("src/img/*").pipe(dest(destDir + "/img"));
+const copyImgReaction = () => {
+  return src("src/img/facebook-reaction-icons/*").pipe(dest(destDir + "/img/facebook-reaction-icons"));
+};
+
+const copyImgIconSideBar = () => {
+  return src('src/img/icon-aside-bar/*').pipe(dest(destDir + '/img/icon-aside-bar'));
 };
 
 const copyTailwindFavicons = () => {
@@ -152,7 +156,8 @@ exports.default = series(
     processJsMainMin,
     processJsChartSample,
     processJsChartSampleMin,
-    copyImg,
+    copyImgIconSideBar,
+    copyImgReaction,
     copyTailwindFavicons,
     copyFont
   ),
