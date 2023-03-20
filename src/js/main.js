@@ -1,10 +1,18 @@
 /* Aside & Navbar: dropdowns */
 
 Array.from(document.getElementsByClassName('dropdown')).forEach(elA => {
-  elA.addEventListener('click', e => {
+  elA.addEventListener('mouseenter', e => {
     if (e.currentTarget.classList.contains('navbar-item')) {
       e.currentTarget.classList.toggle('active')
-    } else {
+    }
+  })
+  elA.addEventListener('mouseleave', e => {
+    if(e.currentTarget.classList.contains('navbar-item')) {
+      e.currentTarget.classList.remove('active')
+    }
+  })
+  elA.addEventListener('click', e => {
+    if(!e.currentTarget.classList.contains('navbar-item')) {
       const dropdownIcon = e.currentTarget.getElementsByClassName('mdi')[1]
 
       e.currentTarget.parentNode.classList.toggle('active')
