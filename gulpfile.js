@@ -69,8 +69,8 @@ const concatHtml = (file) => {
     sources.push(
       "src/html/parts/navbar.html",
       "src/html/parts/aside.html",
-      "src/html/parts/title-bar.html",
-      "src/html/parts/hero-bar.html"
+      // "src/html/parts/title-bar.html",
+      // "src/html/parts/hero-bar.html"
     );
   }
 
