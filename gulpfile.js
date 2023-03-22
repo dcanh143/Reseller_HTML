@@ -68,7 +68,7 @@ const concatHtml = (file) => {
   if (formScreenFiles.indexOf(file) < 0) {
     sources.push(
       "src/html/parts/navbar.html",
-      "src/html/parts/aside.html",
+      "src/html/parts/aside.html"
       // "src/html/parts/title-bar.html",
       // "src/html/parts/hero-bar.html"
     );
@@ -128,11 +128,15 @@ const concatHtml = (file) => {
 /* Img */
 
 const copyImgReaction = () => {
-  return src("src/img/facebook-reaction-icons/*").pipe(dest(destDir + "/img/facebook-reaction-icons"));
+  return src("src/img/facebook-reaction-icons/*").pipe(
+    dest(destDir + "/img/facebook-reaction-icons")
+  );
 };
 
 const copyImgIconSideBar = () => {
-  return src('src/img/icon-aside-bar/*').pipe(dest(destDir + '/img/icon-aside-bar'));
+  return src("src/img/icon-aside-bar/*").pipe(
+    dest(destDir + "/img/icon-aside-bar")
+  );
 };
 
 const copyTailwindFavicons = () => {
