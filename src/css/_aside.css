@@ -6,6 +6,10 @@
   @apply font-avantGardeRegular flex flex-row w-full bg-gray-900 text-white flex-1 px-3 h-14 items-center;
 }
 
+.aside-tools > .aside-header {
+  @apply flex-1 px-3 text-center;
+}
+
 .aside-mobile-expanded .aside {
   @apply font-avantGardeRegular left-0;
 }

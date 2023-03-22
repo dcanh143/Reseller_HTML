@@ -93,10 +93,15 @@ const concatHtml = (file) => {
 
   const titleStrings = {
     tables: "Tables",
-    index: "Dashboard",
+    index: "Trang chủ",
     forms: "Forms",
     profile: "Profile",
     login: "Login",
+    facebookBuffLikePost: "Buff Like Post",
+    facebookBuffViewLivestream: "Buff Live",
+    facebookBuffLikeCmt: "Buff Like Comment",
+    facebookBuffViews: "Buff Views",
+    facebookBuffCmt: "Buff Comment",
   };
 
   const titleStringsLong = {
@@ -156,6 +161,11 @@ exports.default = series(
     () => concatHtml("forms"),
     () => concatHtml("profile"),
     () => concatHtml("login"),
+    () => concatHtml("facebookBuffLikePost"),
+    () => concatHtml("facebookBuffLikeCmt"),
+    () => concatHtml("facebookBuffViewLivestream"),
+    () => concatHtml("facebookBuffViews"),
+    () => concatHtml("facebookBuffCmt"),
     processJsMain,
     processJsMainMin,
     processJsChartSample,
