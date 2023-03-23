@@ -1,3 +1,5 @@
+## Reseller
+
 #### HTML & CSS
 
 Check `dist` directory.
@@ -12,6 +14,6 @@ Check `dist` directory.
 
 `npm run build` to rebuild `dist` from sources in `src` directory
 
-## Useful Links
+#### Useful Links
 
 -   [TailwindCSS](https://tailwindcss.com/)
