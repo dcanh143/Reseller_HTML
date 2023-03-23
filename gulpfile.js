@@ -113,6 +113,11 @@ const concatHtml = (file) => {
     fbvipBuffCmt: "Vip Comment",
     fbvipBuffLive: "Vip Live",
     fbvipBuffShare: "Vip Share Live",
+    instagramBuffSub: "Buff Sub",
+    instagramBuffLike: "Buff Like",
+    instagramBuffCmt: "Buff Comment",
+    instagramBuffView: "Buff View",
+    insvipBuffLike: "Vip Like",
   };
 
   const titleStringsLong = {
@@ -188,6 +193,11 @@ exports.default = series(
     () => concatHtml("fbvipBuffCmt"),
     () => concatHtml("fbvipBuffLive"),
     () => concatHtml("fbvipBuffShare"),
+    () => concatHtml("instagramBuffSub"),
+    () => concatHtml("instagramBuffLike"),
+    () => concatHtml("instagramBuffCmt"),
+    () => concatHtml("instagramBuffView"),
+    () => concatHtml("insvipBuffLike"),
     processJsMain,
     processJsMainMin,
     processJsChartSample,
