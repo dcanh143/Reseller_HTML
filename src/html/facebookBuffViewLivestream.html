@@ -443,13 +443,14 @@
       class="border-gray-100 flex text-black items-stretch border-b dark:border-gray-800"
     >
       <p class="flex items-center py-3 grow font-avantGardeSemibold px-4">
-        <span class="inline-flex justify-center items-center w-6 h-6 mr-3"
-          ><svg viewBox="0 0 24 24" width="16" height="16" class="inline-block">
+        <span class="inline-flex justify-center items-center w-6 h-6 mr-3">
+          <svg viewBox="0 0 24 24" width="16" height="16" class="inline-block">
             <path
               fill="currentColor"
               d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3"
-            ></path></svg
-        ></span>
+            ></path>
+          </svg>
+        </span>
         Lịch sử mua dịch vụ Facebook Live
       </p>
     </header>
@@ -465,10 +466,8 @@
           class="md:rounded border-gray-100 dark:bg-gray-900 bg-white mx-3 xl:mx-0 border dark:border-gray-800 shadow-lg w-auto left-1 right-1 max-h-modal md:w-3/5 xl:w-2/5 z-50"
           style="display: none"
         >
-          <!---->
           <div class="p-6">
             <div class="space-y-3">
-              <!---->
               <div class="mb-6 last:mb-0">
                 <label class="text-xs block font-avantGardeSemibold mb-2"
                   >Trạng thái:</label
@@ -476,7 +475,7 @@
                 <div class="">
                   <div class="relative">
                     <select
-                      class="px-3 py-2 max-w-full focus:ring focus:ring-emerald-600 focus:outline-none border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800 h-12 text-xs"
+                      class="px-3 py-2 max-w-full focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800 h-12 text-xs"
                     >
                       <option value="Thành công">Thành công</option>
                       <option value="Thất bại hoàn tiền">
@@ -485,11 +484,10 @@
                       <option value="Chạy thiếu">Chạy thiếu</option>
                       <option value="Thất bại không hoàn">
                         Thất bại không hoàn
-                      </option></select
-                    ><!----><!---->
+                      </option>
+                    </select>
                   </div>
                 </div>
-                <!---->
               </div>
               <div class="mb-6 last:mb-0">
                 <label class="text-xs block font-avantGardeSemibold mb-2"
@@ -498,12 +496,11 @@
                 <div class="">
                   <div class="relative">
                     <input
-                      class="text-xs focus:border-transparent focus:ring-0 px-3 py-2 max-w-full focus:ring focus:ring-emerald-600 focus:outline-none border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800 h-12"
+                      class="text-xs focus:border-transparent px-3 py-2 max-w-full focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800 h-12"
                       type="number"
-                    /><!----><!---->
+                    />
                   </div>
                 </div>
-                <!---->
               </div>
             </div>
             <hr
@@ -511,15 +508,16 @@
             />
             <div class="flex items-center justify-start flex-wrap -mb-3">
               <button
-                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 bg-emerald-600 text-white border-emerald-700 hover:bg-emerald-700 mr-3 last:mr-0 mb-3"
+                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 bg-emerald-600 text-white border-emerald-700 hover:bg-emerald-700 mr-3 last:mr-0 mb-3"
                 type="button"
               >
-                <!----><span class="px-2">Xác nhận</span></button
-              ><button
-                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 hover:bg-emerald-700 hover:text-white mr-3 last:mr-0 mb-3"
+                <span class="px-2">Xác nhận</span>
+              </button>
+              <button
+                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 hover:bg-emerald-700 hover:text-white mr-3 last:mr-0 mb-3"
                 type="button"
               >
-                <!----><span class="px-2">Huỷ bỏ</span>
+                <span class="px-2">Huỷ bỏ</span>
               </button>
             </div>
           </div>
@@ -536,10 +534,8 @@
           class="md:rounded border-gray-100 dark:bg-gray-900 bg-white mx-3 xl:mx-0 border dark:border-gray-800 shadow-lg w-auto left-1 right-1 max-h-modal md:w-3/5 xl:w-2/5 z-50"
           style="display: none"
         >
-          <!---->
           <div class="p-6">
             <div class="space-y-3">
-              <!---->
               <p>
                 Xác nhận huỷ đơn hàng
                 <span class="font-avantGardeSemibold">s</span>
@@ -550,33 +546,37 @@
             />
             <div class="flex items-center justify-start flex-wrap -mb-3">
               <button
-                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 bg-red-600 text-white border-red-700 hover:bg-red-700 mr-3 last:mr-0 mb-3"
+                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 bg-red-600 text-white border-red-700 hover:bg-red-700 mr-3 last:mr-0 mb-3"
                 type="button"
               >
-                <!----><span class="px-2">Xác nhận</span></button
-              ><button
-                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white mr-3 last:mr-0 mb-3"
+                <span class="px-2">Xác nhận</span>
+              </button>
+              <button
+                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white mr-3 last:mr-0 mb-3"
                 type="button"
               >
-                <!----><span class="px-2">Huỷ bỏ</span>
+                <span class="px-2">Huỷ bỏ</span>
               </button>
             </div>
           </div>
         </div>
       </div>
-      <!---->
+
       <div class="flex flex-col gap-3 xl:flex-row justify-start mb-1">
         <label for="">
-          Tìm kiếm <span class="font-avantGardeSemibold">Kênh</span
-          ><input
+          Tìm kiếm <span class="font-avantGardeSemibold">Kênh</span>
+          <input
             id="channel_input"
-            class="ml-2 border-x border-y w-40 h-8 bg-transparent focus:ring focus:outline-none border-gray-700 rounded dark:placeholder-gray-400 resize-none" /></label
-        ><label class="">
-          Tìm kiếm <span class="font-avantGardeSemibold">ID FACEBOOK</span
-          ><input
+            class="ml-2 border-x border-y w-40 h-8 bg-transparent border-gray-700 rounded dark:placeholder-gray-400 resize-none"
+          />
+        </label>
+        <label class="">
+          Tìm kiếm <span class="font-avantGardeSemibold">ID FACEBOOK</span>
+          <input
             id="id_input"
-            class="ml-2 border-x border-y w-40 h-8 bg-transparent focus:ring focus:outline-none border-gray-700 rounded dark:placeholder-gray-400 resize-none"
-        /></label>
+            class="ml-2 border-x border-y w-40 h-8 bg-transparent border-gray-700 rounded dark:placeholder-gray-400 resize-none"
+          />
+        </label>
       </div>
       <div class="overflow-x-auto scroll-smooth">
         <table
@@ -630,16 +630,17 @@
                     class="flex items-center justify-start flex-nowrap -mb-3 snap-center"
                   >
                     <button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
                       type="button"
                     >
-                      <!----><span class="px-2">đã dừng</span></button
-                    ><button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
+                      <span class="px-2">đã dừng</span>
+                    </button>
+                    <button
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
                       type="button"
                       disabled=""
                     >
-                      <!----><span class="px-2">chỉnh sửa</span>
+                      <span class="px-2">chỉnh sửa</span>
                     </button>
                   </div>
                 </div>
@@ -705,8 +706,9 @@
                 <textarea
                   type="note"
                   order_code="tZZI5S9qq8"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -715,8 +717,9 @@
                 <textarea
                   type="note_admin"
                   order_code="tZZI5S9qq8"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -725,9 +728,9 @@
                 <textarea
                   type="notification_from_admin"
                   order_code="tZZI5S9qq8"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea
-                ><!---->
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 id="td_status"
@@ -739,7 +742,8 @@
                 >
                   <span
                     class="inline-flex justify-center items-center w-4 h-4 mr-2"
-                    ><svg
+                  >
+                    <svg
                       viewBox="0 0 24 24"
                       width="16"
                       height="16"
@@ -748,10 +752,11 @@
                       <path
                         fill="currentColor"
                         d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
-                      ></path></svg></span
-                  ><span>Thành công</span>
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>Thành công</span>
                 </div>
-                <!---->
               </td>
             </tr>
             <tr class="xl:hover:bg-gray-100 border-x border-y border-black">
@@ -762,16 +767,17 @@
                     class="flex items-center justify-start flex-nowrap -mb-3 snap-center"
                   >
                     <button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
                       type="button"
                     >
-                      <!----><span class="px-2">đã dừng</span></button
-                    ><button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
+                      <span class="px-2">đã dừng</span>
+                    </button>
+                    <button
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
                       type="button"
                       disabled=""
                     >
-                      <!----><span class="px-2">chỉnh sửa</span>
+                      <span class="px-2">chỉnh sửa</span>
                     </button>
                   </div>
                 </div>
@@ -837,8 +843,9 @@
                 <textarea
                   type="note"
                   order_code="yRr1Phkpkg"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -847,8 +854,9 @@
                 <textarea
                   type="note_admin"
                   order_code="yRr1Phkpkg"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -857,9 +865,9 @@
                 <textarea
                   type="notification_from_admin"
                   order_code="yRr1Phkpkg"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea
-                ><!---->
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 id="td_status"
@@ -871,7 +879,8 @@
                 >
                   <span
                     class="inline-flex justify-center items-center w-4 h-4 mr-2"
-                    ><svg
+                  >
+                    <svg
                       viewBox="0 0 24 24"
                       width="16"
                       height="16"
@@ -880,10 +889,11 @@
                       <path
                         fill="currentColor"
                         d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
-                      ></path></svg></span
-                  ><span>Thành công</span>
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>Thành công</span>
                 </div>
-                <!---->
               </td>
             </tr>
             <tr class="xl:hover:bg-gray-100 border-x border-y border-black">
@@ -894,16 +904,17 @@
                     class="flex items-center justify-start flex-nowrap -mb-3 snap-center"
                   >
                     <button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
                       type="button"
                     >
-                      <!----><span class="px-2">đã dừng</span></button
-                    ><button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
+                      <span class="px-2">đã dừng</span>
+                    </button>
+                    <button
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
                       type="button"
                       disabled=""
                     >
-                      <!----><span class="px-2">chỉnh sửa</span>
+                      <span class="px-2">chỉnh sửa</span>
                     </button>
                   </div>
                 </div>
@@ -967,8 +978,9 @@
                 <textarea
                   type="note"
                   order_code="mH5N0WoqfD"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -977,8 +989,9 @@
                 <textarea
                   type="note_admin"
                   order_code="mH5N0WoqfD"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -987,9 +1000,9 @@
                 <textarea
                   type="notification_from_admin"
                   order_code="mH5N0WoqfD"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea
-                ><!---->
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 id="td_status"
@@ -1001,7 +1014,8 @@
                 >
                   <span
                     class="inline-flex justify-center items-center w-4 h-4 mr-2"
-                    ><svg
+                  >
+                    <svg
                       viewBox="0 0 24 24"
                       width="16"
                       height="16"
@@ -1010,10 +1024,11 @@
                       <path
                         fill="currentColor"
                         d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
-                      ></path></svg></span
-                  ><span>Thành công</span>
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>Thành công</span>
                 </div>
-                <!---->
               </td>
             </tr>
             <tr class="xl:hover:bg-gray-100 border-x border-y border-black">
@@ -1024,16 +1039,17 @@
                     class="flex items-center justify-start flex-nowrap -mb-3 snap-center"
                   >
                     <button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
                       type="button"
                     >
-                      <!----><span class="px-2">đã dừng</span></button
-                    ><button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
+                      <span class="px-2">đã dừng</span>
+                    </button>
+                    <button
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
                       type="button"
                       disabled=""
                     >
-                      <!----><span class="px-2">chỉnh sửa</span>
+                      <span class="px-2">chỉnh sửa</span>
                     </button>
                   </div>
                 </div>
@@ -1097,8 +1113,9 @@
                 <textarea
                   type="note"
                   order_code="eMSBnIjPAN"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1107,8 +1124,9 @@
                 <textarea
                   type="note_admin"
                   order_code="eMSBnIjPAN"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1117,9 +1135,9 @@
                 <textarea
                   type="notification_from_admin"
                   order_code="eMSBnIjPAN"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea
-                ><!---->
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 id="td_status"
@@ -1131,7 +1149,8 @@
                 >
                   <span
                     class="inline-flex justify-center items-center w-4 h-4 mr-2"
-                    ><svg
+                  >
+                    <svg
                       viewBox="0 0 24 24"
                       width="16"
                       height="16"
@@ -1140,10 +1159,11 @@
                       <path
                         fill="currentColor"
                         d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
-                      ></path></svg></span
-                  ><span>Thành công</span>
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>Thành công</span>
                 </div>
-                <!---->
               </td>
             </tr>
             <tr class="xl:hover:bg-gray-100 border-x border-y border-black">
@@ -1154,16 +1174,17 @@
                     class="flex items-center justify-start flex-nowrap -mb-3 snap-center"
                   >
                     <button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
                       type="button"
                     >
-                      <!----><span class="px-2">đã dừng</span></button
-                    ><button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
+                      <span class="px-2">đã dừng</span>
+                    </button>
+                    <button
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
                       type="button"
                       disabled=""
                     >
-                      <!----><span class="px-2">chỉnh sửa</span>
+                      <span class="px-2">chỉnh sửa</span>
                     </button>
                   </div>
                 </div>
@@ -1227,8 +1248,9 @@
                 <textarea
                   type="note"
                   order_code="uhQunxVPu7"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1237,8 +1259,9 @@
                 <textarea
                   type="note_admin"
                   order_code="uhQunxVPu7"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1247,9 +1270,9 @@
                 <textarea
                   type="notification_from_admin"
                   order_code="uhQunxVPu7"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea
-                ><!---->
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 id="td_status"
@@ -1261,7 +1284,8 @@
                 >
                   <span
                     class="inline-flex justify-center items-center w-4 h-4 mr-2"
-                    ><svg
+                  >
+                    <svg
                       viewBox="0 0 24 24"
                       width="16"
                       height="16"
@@ -1270,10 +1294,11 @@
                       <path
                         fill="currentColor"
                         d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
-                      ></path></svg></span
-                  ><span>Thành công</span>
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>Thành công</span>
                 </div>
-                <!---->
               </td>
             </tr>
             <tr class="xl:hover:bg-gray-100 border-x border-y border-black">
@@ -1284,16 +1309,17 @@
                     class="flex items-center justify-start flex-nowrap -mb-3 snap-center"
                   >
                     <button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
                       type="button"
                     >
-                      <!----><span class="px-2">đã dừng</span></button
-                    ><button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
+                      <span class="px-2">đã dừng</span>
+                    </button>
+                    <button
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
                       type="button"
                       disabled=""
                     >
-                      <!----><span class="px-2">chỉnh sửa</span>
+                      <span class="px-2">chỉnh sửa</span>
                     </button>
                   </div>
                 </div>
@@ -1357,8 +1383,9 @@
                 <textarea
                   type="note"
                   order_code="w6HYN0b7v1"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1367,8 +1394,9 @@
                 <textarea
                   type="note_admin"
                   order_code="w6HYN0b7v1"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1377,9 +1405,9 @@
                 <textarea
                   type="notification_from_admin"
                   order_code="w6HYN0b7v1"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea
-                ><!---->
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 id="td_status"
@@ -1391,7 +1419,8 @@
                 >
                   <span
                     class="inline-flex justify-center items-center w-4 h-4 mr-2"
-                    ><svg
+                  >
+                    <svg
                       viewBox="0 0 24 24"
                       width="16"
                       height="16"
@@ -1400,10 +1429,11 @@
                       <path
                         fill="currentColor"
                         d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
-                      ></path></svg></span
-                  ><span>Thành công</span>
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>Thành công</span>
                 </div>
-                <!---->
               </td>
             </tr>
             <tr class="xl:hover:bg-gray-100 border-x border-y border-black">
@@ -1414,16 +1444,17 @@
                     class="flex items-center justify-start flex-nowrap -mb-3 snap-center"
                   >
                     <button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
                       type="button"
                     >
-                      <!----><span class="px-2">đã dừng</span></button
-                    ><button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
+                      <span class="px-2">đã dừng</span>
+                    </button>
+                    <button
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
                       type="button"
                       disabled=""
                     >
-                      <!----><span class="px-2">chỉnh sửa</span>
+                      <span class="px-2">chỉnh sửa</span>
                     </button>
                   </div>
                 </div>
@@ -1487,8 +1518,9 @@
                 <textarea
                   type="note"
                   order_code="VaEHATvZvg"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1497,8 +1529,9 @@
                 <textarea
                   type="note_admin"
                   order_code="VaEHATvZvg"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1507,9 +1540,9 @@
                 <textarea
                   type="notification_from_admin"
                   order_code="VaEHATvZvg"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea
-                ><!---->
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 id="td_status"
@@ -1521,7 +1554,8 @@
                 >
                   <span
                     class="inline-flex justify-center items-center w-4 h-4 mr-2"
-                    ><svg
+                  >
+                    <svg
                       viewBox="0 0 24 24"
                       width="16"
                       height="16"
@@ -1530,10 +1564,11 @@
                       <path
                         fill="currentColor"
                         d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
-                      ></path></svg></span
-                  ><span>Thành công</span>
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>Thành công</span>
                 </div>
-                <!---->
               </td>
             </tr>
             <tr class="xl:hover:bg-gray-100 border-x border-y border-black">
@@ -1544,16 +1579,17 @@
                     class="flex items-center justify-start flex-nowrap -mb-3 snap-center"
                   >
                     <button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-red-600 border-red-700 hover:bg-red-700 hover:text-white cursor-not-allowed mr-3 last:mr-0 mb-3"
                       type="button"
                     >
-                      <!----><span class="px-2">đã dừng</span></button
-                    ><button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
+                      <span class="px-2">đã dừng</span>
+                    </button>
+                    <button
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
                       type="button"
                       disabled=""
                     >
-                      <!----><span class="px-2">chỉnh sửa</span>
+                      <span class="px-2">chỉnh sửa</span>
                     </button>
                   </div>
                 </div>
@@ -1617,8 +1653,9 @@
                 <textarea
                   type="note"
                   order_code="hLil5DxGbP"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1627,8 +1664,9 @@
                 <textarea
                   type="note_admin"
                   order_code="hLil5DxGbP"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1637,9 +1675,9 @@
                 <textarea
                   type="notification_from_admin"
                   order_code="hLil5DxGbP"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea
-                ><!---->
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 id="td_status"
@@ -1651,7 +1689,8 @@
                 >
                   <span
                     class="inline-flex justify-center items-center w-4 h-4 mr-2"
-                    ><svg
+                  >
+                    <svg
                       viewBox="0 0 24 24"
                       width="16"
                       height="16"
@@ -1660,10 +1699,11 @@
                       <path
                         fill="currentColor"
                         d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
-                      ></path></svg></span
-                  ><span>Thành công</span>
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>Thành công</span>
                 </div>
-                <!---->
               </td>
             </tr>
             <tr class="xl:hover:bg-gray-100 border-x border-y border-black">
@@ -1674,17 +1714,18 @@
                     class="flex items-center justify-start flex-nowrap -mb-3 snap-center"
                   >
                     <button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-red-600 border-red-700 cursor-not-allowed opacity-50 cursor-not-allowed mr-3 last:mr-0 mb-3"
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-red-600 border-red-700 cursor-not-allowed opacity-50 cursor-not-allowed mr-3 last:mr-0 mb-3"
                       type="button"
                       disabled=""
                     >
-                      <!----><span class="px-2">đã dừng</span></button
-                    ><button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
+                      <span class="px-2">đã dừng</span>
+                    </button>
+                    <button
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
                       type="button"
                       disabled=""
                     >
-                      <!----><span class="px-2">chỉnh sửa</span>
+                      <span class="px-2">chỉnh sửa</span>
                     </button>
                   </div>
                 </div>
@@ -1750,8 +1791,9 @@
                 <textarea
                   type="note"
                   order_code="HsTKcdnnAZ"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1760,8 +1802,9 @@
                 <textarea
                   type="note_admin"
                   order_code="HsTKcdnnAZ"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1770,9 +1813,9 @@
                 <textarea
                   type="notification_from_admin"
                   order_code="HsTKcdnnAZ"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea
-                ><!---->
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 id="td_status"
@@ -1784,7 +1827,8 @@
                 >
                   <span
                     class="inline-flex justify-center items-center w-4 h-4 mr-2"
-                    ><svg
+                  >
+                    <svg
                       viewBox="0 0 24 24"
                       width="16"
                       height="16"
@@ -1793,8 +1837,10 @@
                       <path
                         fill="currentColor"
                         d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M16,10V17A1,1 0 0,1 15,18H9A1,1 0 0,1 8,17V10H16M13.5,6L14.5,7H17V9H7V7H9.5L10.5,6H13.5Z"
-                      ></path></svg></span
-                  ><span>Thất bại</span>
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>Thất bại</span>
                 </div>
                 <p>
                   (đã hoàn <span class="font-avantGardeSemibold">3,000đ</span> )
@@ -1811,17 +1857,18 @@
                     class="flex items-center justify-start flex-nowrap -mb-3 snap-center"
                   >
                     <button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-red-600 border-red-700 cursor-not-allowed opacity-50 cursor-not-allowed mr-3 last:mr-0 mb-3"
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-red-600 border-red-700 cursor-not-allowed opacity-50 cursor-not-allowed mr-3 last:mr-0 mb-3"
                       type="button"
                       disabled=""
                     >
-                      <!----><span class="px-2">đã dừng</span></button
-                    ><button
-                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
+                      <span class="px-2">đã dừng</span>
+                    </button>
+                    <button
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
                       type="button"
                       disabled=""
                     >
-                      <!----><span class="px-2">chỉnh sửa</span>
+                      <span class="px-2">chỉnh sửa</span>
                     </button>
                   </div>
                 </div>
@@ -1887,8 +1934,9 @@
                 <textarea
                   type="note"
                   order_code="NO5JSWt3aO"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1897,8 +1945,9 @@
                 <textarea
                   type="note_admin"
                   order_code="NO5JSWt3aO"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea>
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 class="text-center border-x border-y border-black"
@@ -1907,9 +1956,9 @@
                 <textarea
                   type="notification_from_admin"
                   order_code="NO5JSWt3aO"
-                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent focus:ring focus:outline-none border-gray-700 dark:placeholder-gray-400 resize-none"
-                ></textarea
-                ><!---->
+                  class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
+                >
+                </textarea>
               </td>
               <td
                 id="td_status"
@@ -1921,7 +1970,8 @@
                 >
                   <span
                     class="inline-flex justify-center items-center w-4 h-4 mr-2"
-                    ><svg
+                  >
+                    <svg
                       viewBox="0 0 24 24"
                       width="16"
                       height="16"
@@ -1930,8 +1980,10 @@
                       <path
                         fill="currentColor"
                         d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M16,10V17A1,1 0 0,1 15,18H9A1,1 0 0,1 8,17V10H16M13.5,6L14.5,7H17V9H7V7H9.5L10.5,6H13.5Z"
-                      ></path></svg></span
-                  ><span>Thất bại</span>
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>Thất bại</span>
                 </div>
                 <p>
                   (đã hoàn <span class="font-avantGardeSemibold">3,000đ</span> )
@@ -1948,40 +2000,46 @@
           >
             <div class="flex items-center justify-start flex-wrap -mb-3">
               <button
-                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring ring-black dark:ring-white p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
+                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring ring-black dark:ring-white p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
                 type="button"
               >
-                <!----><span class="px-2">1</span></button
-              ><button
-                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
+                <span class="px-2">1</span>
+              </button>
+              <button
+                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
                 type="button"
               >
-                <!----><span class="px-2">2</span></button
-              ><button
-                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
+                <span class="px-2">2</span>
+              </button>
+              <button
+                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
                 type="button"
               >
-                <!----><span class="px-2">3</span></button
-              ><button
-                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
+                <span class="px-2">3</span>
+              </button>
+              <button
+                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
                 type="button"
               >
-                <!----><span class="px-2">4</span></button
-              ><button
-                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
+                <span class="px-2">4</span>
+              </button>
+              <button
+                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
                 type="button"
               >
-                <!----><span class="px-2">5</span></button
-              ><button
-                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
+                <span class="px-2">5</span>
+              </button>
+              <button
+                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
                 type="button"
               >
-                <!----><span class="px-2">6</span></button
-              ><button
-                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap focus:outline-none transition-colors focus:ring-0 duration-150 border ring-0 p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
+                <span class="px-2">6</span>
+              </button>
+              <button
+                class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
                 type="button"
               >
-                <!----><span class="px-2">7</span>
+                <span class="px-2">7</span>
               </button>
             </div>
           </div>
