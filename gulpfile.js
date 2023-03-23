@@ -123,6 +123,11 @@ const concatHtml = (file) => {
     tiktokBuffLike: "TikTok Like",
     tiktokBuffCmt: "TikTok Comment",
     tiktokvipBuffView: "TikTok Vip View",
+    ytBuffSub: "Youtube Sub",
+    ytBuffView: "Youtube View",
+    ytBuffWatch: "Youtube Giờ Xem",
+    ytBuffLike: "Youtube Like",
+    ytBuffCmt: "Youtube Comment",
   };
 
   const titleStringsLong = {
@@ -208,6 +213,11 @@ exports.default = series(
     () => concatHtml("tiktokBuffLike"),
     () => concatHtml("tiktokBuffCmt"),
     () => concatHtml("tiktokvipBuffView"),
+    () => concatHtml("ytBuffSub"),
+    () => concatHtml("ytBuffView"),
+    () => concatHtml("ytBuffWatch"),
+    () => concatHtml("ytBuffLike"),
+    () => concatHtml("ytBuffCmt"),
     processJsMain,
     processJsMainMin,
     processJsChartSample,
