@@ -22,7 +22,6 @@
       </button>
     </li>
   </ul>
-
   <div id="tao-tien-trinh" style="display: block">
     <div class="flex flex-col gap-4 xl:flex-row">
       <div
@@ -88,7 +87,7 @@
                 class="focus:border-transparent w-full text-sm border-x border-y h-10 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
               >
               </textarea>
-              <p>Xác nhận mua VIEW với giá 0đ</p>
+              <p>Xác nhận mua REVIEW PAGE với giá 0đ</p>
             </div>
             <hr
               class="border-gray-100 my-6 -mx-6 dark:border-gray-800 border-t"
@@ -130,7 +129,7 @@
                 ></path>
               </svg>
             </span>
-            Facebook Views
+            Facebook Review Page
           </p>
           <div class="flex items-center justify-start flex-wrap -mb-3 mx-3">
             <button
@@ -163,7 +162,7 @@
             <textarea class="text-xs bg-yellow-500 h-10 w-full resize-none">
             </textarea>
           </div>
-          <div class="grid grid-cols-2 gap-6 xl:grid-cols-2 mb-6">
+          <div class="grid grid-cols-2 gap-6 mb-6 xl:grid-cols-2">
             <div class="mb-6 last:mb-0">
               <label class="text-xs block font-avantGardeSemibold mb-2"
                 >Facebook link hoặc id</label
@@ -179,7 +178,7 @@
             </div>
             <div class="mb-6 last:mb-0">
               <label class="text-xs block font-avantGardeSemibold mb-2"
-                >Số lượng views</label
+                >Nhập số lượng comment</label
               >
               <div class="">
                 <div class="relative">
@@ -191,71 +190,7 @@
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-2 gap-6 xl:grid-cols-2">
-            <div class="mb-6 last:mb-0">
-              <label class="text-xs block font-avantGardeSemibold mb-2"
-                >Facebook Cookie
-              </label>
-              <div class="">
-                <div class="relative">
-                  <input
-                    class="text-xs focus:border-transparent px-3 py-2 max-w-full focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800"
-                    placeholder="Nhập cookie để lấy access token"
-                    type="text"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="mb-6 last:mb-0">
-              <label class="text-xs block font-avantGardeSemibold mb-2"
-                >Facebook Access Token</label
-              >
-              <div class="">
-                <div class="relative">
-                  <input
-                    class="text-xs focus:border-transparent px-3 py-2 max-w-full focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800"
-                    type="text"
-                    readonly=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-6 last:mb-0">
-            <label class="text-xs block font-avantGardeSemibold mb-2"
-              >Tốc độ</label
-            >
-            <div class="">
-              <ul class="flex flex-col lg:flex-row">
-                <li class="mr-6 mb-3 last:mr-0">
-                  <label class="flex content-between">
-                    <input type="radio" class="" value="Bình thường" />
-                    <span class="control-label font-avantGardeSemibold mx-4"
-                      >Bình thường</span
-                    >
-                    <div
-                      class="inline-flex items-center last:mr-0 capitalize border py-0.5 px-2 text-xs rounded-lg mr-1.5 bg-emerald-600 text-white border-emerald-700"
-                    >
-                      <span>Đang mở</span>
-                    </div>
-                  </label>
-                </li>
-                <li class="mr-6 mb-3 last:mr-0">
-                  <label class="flex content-between">
-                    <input type="radio" class="" value="Nhanh (Giá x1.5)" />
-                    <span class="control-label font-avantGardeSemibold mx-4"
-                      >Nhanh (Giá x1.5)</span
-                    >
-                    <div
-                      class="inline-flex items-center last:mr-0 capitalize border py-0.5 px-2 text-xs rounded-lg mr-1.5 bg-emerald-600 text-white border-emerald-700"
-                    >
-                      <span>Đang mở</span>
-                    </div>
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </div>
+
           <div
             class="text-white px-6 py-4 border-0 relative mb-4 bg-emerald-600"
           >
@@ -265,264 +200,46 @@
             >
             </textarea>
           </div>
-          <div class="mb-6 last:mb-0">
-            <label class="text-xs block font-avantGardeSemibold mb-2"
-              >Chọn gói</label
-            >
-            <div class="">
-              <div class="flex flex-col xl:flex-row gap-3">
-                <div class="flex items-center justify-start flex-wrap -mb-3">
-                  <button
-                    class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-2 bg-emerald-600 text-white border-emerald-700 hover:bg-emerald-700 mr-3 last:mr-0 mb-3"
-                    type="button"
-                    modelvalue="vip"
-                  >
-                    <span class="px-2">VIP - 12đ</span>
-                  </button>
-                </div>
-                <div class="flex items-center justify-start flex-wrap -mb-3">
-                  <button
-                    class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-2 text-emerald-600 border-emerald-700 hover:bg-emerald-700 hover:text-white mr-3 last:mr-0 mb-3"
-                    type="button"
-                    modelvalue="vip"
-                  >
-                    <span class="px-2">Rẻ - 2đ</span>
-                  </button>
-                </div>
-                <div class="flex items-center justify-start flex-wrap -mb-3">
-                  <button
-                    class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-2 text-emerald-600 border-emerald-700 hover:bg-emerald-700 hover:text-white mr-3 last:mr-0 mb-3"
-                    type="button"
-                    modelvalue="vip"
-                  >
-                    <span class="px-2">Thường - 4đ</span>
-                  </button>
+          <div class="flex flex-row w-fit mb-6">
+            <div class="mb-6 last:mb-0">
+              <div class="">
+                <div class="flex flex-wrap flex-col -mb-3">
+                  <label class="mr-6 mb-3 last:mr-0">
+                    <input type="radio" class="" value="[object Object]" />
+                    <span class="control-label font-avantGardeSemibold mx-4">
+                      Kênh 1 ( Comment lọc nam nữ )
+                      <div
+                        class="inline-flex items-center last:mr-0 capitalize border py-0.5 px-2 text-xs rounded-lg mr-1.5 bg-emerald-600 text-white border-emerald-700"
+                      >
+                        <span>200đ</span>
+                      </div>
+                    </span>
+                  </label>
+                  <label class="mr-6 mb-3 last:mr-0">
+                    <input type="radio" class="" value="[object Object]" />
+                    <span class="control-label font-avantGardeSemibold mx-4">
+                      Kênh 2 ( Comment lọc nam nữ )
+                      <div
+                        class="inline-flex items-center last:mr-0 capitalize border py-0.5 px-2 text-xs rounded-lg mr-1.5 bg-emerald-600 text-white border-emerald-700"
+                      >
+                        <span>200đ</span>
+                      </div>
+                    </span>
+                  </label>
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex flex-row w-fit mb-6">
-            <div class="mb-6 last:mb-0">
-              <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
-                <ul>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 1 ( View 3s )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 2 ( View 10s giá x 1,05 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 3 ( View 15s giá x 1.1 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 4 ( View 30s giá x 1,3 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 5 ( View 1 Phút giá x 1.5 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 6 ( View 3 phút giá x 3 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 7 ( View 6 phút giá x 4 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 8 ( View 10 phút giá x 6 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 9 ( Xem on live 3s giá x 3 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 10 ( Xem on live 10s giá x 3.2 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 11 ( Xem on live 15s giá x 3.5 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 12 ( Xem on live 1 phút giá x 5 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 13 ( Xem on live 3 phút giá x 8 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 14 ( Xem on live 6 phút giá x 11 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 15 ( Xem on live 10 phút giá x 15 )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 17 ( Xem on live 60k phút )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 18 ( Xem on live 100k phút )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 19 ( 600k phút )
-                      </span>
-                    </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label>
-                      <input type="radio" class="" value="[object Object]" />
-                      <span class="control-label font-avantGardeSemibold mx-4">
-                        Kênh 20 ( Xem 600k phút, 60k phút live )
-                      </span>
-                    </label>
-                  </li>
-                </ul>
-                <ul>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                  <li class="mr-6 mb-3 last:mr-0">
-                    <label> </label>
-                  </li>
-                </ul>
+          <div class="mb-6 last:mb-0">
+            <label class="text-xs block font-avantGardeSemibold mb-2"
+              >Nội dung bình luận</label
+            >
+            <div class="">
+              <div class="relative">
+                <textarea
+                  class="text-xs focus:border-transparent px-3 py-2 max-w-full focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none border bg-white dark:bg-gray-800 h-40"
+                >
+                </textarea>
               </div>
             </div>
           </div>
@@ -546,7 +263,7 @@
           <div class="block font-avantGardeSemibold mb-2">
             Thanh toán: <span class="text-blue-500 text-xl">0đ</span> <br />
             Bạn đang mua <span class="text-red-500 text-base">0</span> với giá
-            <span class="text-base">180đ</span>
+            <span class="text-base">200đ</span>
           </div>
           <hr
             class="border-gray-100 my-6 -mx-6 dark:border-gray-800 border-t"
@@ -625,7 +342,6 @@
       </div>
     </div>
   </div>
-
   <div id="lich-su-mua-dich-vu" style="display: none">
     <div
       class="md:rounded border-gray-100 dark:bg-gray-900/70 bg-white mx-3 xl:mx-0 border dark:border-gray-800"
@@ -648,7 +364,7 @@
               ></path>
             </svg>
           </span>
-          Lịch sử mua dịch vụ Facebook Views
+          Lịch sử mua dịch vụ Facebook Review Page
         </p>
       </header>
       <div class="p-6">
@@ -790,7 +506,7 @@
                   Tên tài khoản
                 </th>
                 <th class="text-center border-x border-y border-black">Kênh</th>
-                <th class="text-center border-x border-y border-black">
+                <th class="text-center border-x border-y border-black w-40">
                   Ngày tạo
                 </th>
                 <th class="text-center border-x border-y border-black">ID</th>
@@ -805,6 +521,9 @@
                 </th>
                 <th class="text-center border-x border-y border-black">
                   Tổng tiền
+                </th>
+                <th class="text-center border-x border-y border-black">
+                  Nội dung bình luận
                 </th>
                 <th class="text-center border-x border-y border-black">
                   Ghi chú
@@ -833,13 +552,6 @@
                       class="flex items-center justify-start flex-nowrap -mb-3"
                     >
                       <button
-                        class="inline-flex justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-red-600 border-red-700 cursor-not-allowed opacity-50 cursor-not-allowed mr-3 last:mr-0 mb-3"
-                        type="button"
-                        disabled=""
-                      >
-                        <span class="px-2">huỷ đơn</span>
-                      </button>
-                      <button
                         class="inline-flex justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
                         type="button"
                         disabled=""
@@ -865,7 +577,7 @@
                   class="text-center border-x border-y border-black"
                   data-label="Thời gian"
                 >
-                  16/12/2022, 21:38:29<br />
+                  03/01/2023, 23:29:10 <br />
                   3 tháng trước
                 </td>
                 <td
@@ -874,34 +586,82 @@
                 >
                   <a
                     class="text-blue-500"
-                    href="https://facebook.com/1343778856387323"
+                    href="https://facebook.com/102068246096709"
                     target="_blank"
-                    >1343778856387323</a
+                    >102068246096709</a
                   >
                 </td>
                 <td
                   class="text-center border-x border-y border-black"
                   data-label="Số lượng ban đầu"
                 >
-                  1518467
+                  0
                 </td>
                 <td
                   class="text-center border-x border-y border-black"
                   data-label="Số lượng"
                 >
-                  1000
+                  20
                 </td>
                 <td
                   class="text-center border-x border-y border-black"
                   data-label="Đã chạy"
                 >
-                  1042
+                  20
                 </td>
                 <td
                   class="text-center border-x border-y border-black"
                   data-label="Tổng tiền"
                 >
-                  12,000đ
+                  4,000đ
+                </td>
+                <td
+                  class="text-center border-x border-y border-black"
+                  data-label="Nội dung bình luận"
+                >
+                  <button
+                    class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 hover:bg-emerald-700 hover:text-white"
+                    type="button"
+                  >
+                    <span class="px-2">xem bình luận</span>
+                  </button>
+                  <div
+                    class="flex items-center flex-col justify-center overflow-hidden fixed inset-0 z-50"
+                    style="display: none"
+                  >
+                    <div
+                      class="absolute inset-0 bg-gradient-to-tr opacity-30 dark:from-gray-700 dark:via-gray-900 dark:to-gray-700 from-gray-700 via-gray-900 to-gray-700"
+                    ></div>
+                    <div
+                      class="md:rounded border-gray-100 dark:bg-gray-900 bg-white mx-3 xl:mx-0 border dark:border-gray-800 shadow-lg w-auto left-1 right-1 max-h-modal md:w-3/5 xl:w-2/5 z-50"
+                      style="display: none"
+                    >
+                      <div class="p-6">
+                        <div class="space-y-3">
+                          <div class="relative">
+                            <textarea
+                              class="text-xs focus:border-transparent px-3 py-2 max-w-full focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none border bg-white dark:bg-gray-800 h-40"
+                              readonly=""
+                            >
+                            </textarea>
+                          </div>
+                        </div>
+                        <hr
+                          class="border-gray-100 my-6 -mx-6 dark:border-gray-800 border-t"
+                        />
+                        <div
+                          class="flex items-center justify-start flex-wrap -mb-3"
+                        >
+                          <button
+                            class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 bg-red-600 text-white border-red-700 hover:bg-red-700 mr-3 last:mr-0 mb-3"
+                            type="button"
+                          >
+                            <span class="px-2">OK</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </td>
                 <td
                   class="text-center border-x border-y border-black"
@@ -909,7 +669,7 @@
                 >
                   <textarea
                     type="note"
-                    order_code="YwXDd4uwhR"
+                    order_code="f0BGSWGy8l"
                     class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
                   >
                   </textarea>
@@ -920,7 +680,7 @@
                 >
                   <textarea
                     type="note_admin"
-                    order_code="YwXDd4uwhR"
+                    order_code="f0BGSWGy8l"
                     class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
                   >
                   </textarea>
@@ -931,7 +691,7 @@
                 >
                   <textarea
                     type="notification_from_admin"
-                    order_code="YwXDd4uwhR"
+                    order_code="f0BGSWGy8l"
                     class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
                   >
                   </textarea>

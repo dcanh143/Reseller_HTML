@@ -102,6 +102,13 @@ const concatHtml = (file) => {
     facebookBuffLikeCmt: "Buff Like Comment",
     facebookBuffViews: "Buff Views",
     facebookBuffCmt: "Buff Comment",
+    facebookBuffSub: "Buff Sub/Follow",
+    facebookBuffReviewPage: "Buff Review Page",
+    facebookBuffViewStory: "Buff View Story",
+    facebookBuffSubPage: "Buff Sub/Follow Page",
+    facebookBuffLikePage: "Buff Like Page",
+    facebookBuffMemberGroup: "Buff Member Group",
+    facebookBuffShare: "Buff Share",
   };
 
   const titleStringsLong = {
@@ -166,6 +173,13 @@ exports.default = series(
     () => concatHtml("facebookBuffViewLivestream"),
     () => concatHtml("facebookBuffViews"),
     () => concatHtml("facebookBuffCmt"),
+    () => concatHtml("facebookBuffSub"),
+    () => concatHtml("facebookBuffReviewPage"),
+    () => concatHtml("facebookBuffViewStory"),
+    () => concatHtml("facebookBuffSubPage"),
+    () => concatHtml("facebookBuffLikePage"),
+    () => concatHtml("facebookBuffMemberGroup"),
+    () => concatHtml("facebookBuffShare"),
     processJsMain,
     processJsMainMin,
     processJsChartSample,
