@@ -1,129 +1,94 @@
-  <section class="section main-section">
-    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 mb-6">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            <span class="icon"><i class="mdi mdi-account-circle"></i></span>
-            Edit Profile
-          </p>
-        </header>
-        <div class="card-content">
-          <form>
-            <div class="field">
-              <label class="label">Avatar</label>
-              <div class="field-body">
-                <div class="field file">
-                  <label class="upload control">
-                    <a class="button blue">
-                      Upload
-                    </a>
-                    <input type="file">
-                  </label>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <input type="text" autocomplete="on" name="name" value="John Doe" class="input" required>
-                  </div>
-                  <p class="help">Required. Your name</p>
-                </div>
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">E-mail</label>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <input type="email" autocomplete="on" name="email" value="user@example.com" class="input" required>
-                  </div>
-                  <p class="help">Required. Your e-mail</p>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="field">
-              <div class="control">
-                <button type="submit" class="button green">
-                  Submit
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            <span class="icon"><i class="mdi mdi-account"></i></span>
-            Profile
-          </p>
-        </header>
-        <div class="card-content">
-          <div class="image w-48 h-48 mx-auto">
-            <img src="https://avatars.dicebear.com/v2/initials/john-doe.svg" alt="John Doe" class="rounded-full">
-          </div>
-          <hr>
-          <div class="field">
-            <label class="label">Name</label>
-            <div class="control">
-              <input type="text" readonly value="John Doe" class="input is-static">
-            </div>
-          </div>
-          <hr>
-          <div class="field">
-            <label class="label">E-mail</label>
-            <div class="control">
-              <input type="text" readonly value="user@example.com" class="input is-static">
-            </div>
+<section class="px-0 md:px-6 py-6">
+  <form
+    class="md:rounded border-gray-100 dark:bg-gray-900/70 bg-white mx-3 xl:mx-0 border dark:border-gray-800"
+  >
+    <header
+      class="border-gray-100 flex text-black items-stretch border-b dark:border-gray-800"
+    >
+      <p class="flex items-center py-3 grow font-avantGardeSemibold px-4">
+        <span class="inline-flex justify-center items-center w-6 h-6 mr-3">
+          <svg viewBox="0 0 24 24" width="16" height="16" class="inline-block">
+            <path
+              fill="currentColor"
+              d="M12,17A2,2 0 0,0 14,15C14,13.89 13.1,13 12,13A2,2 0 0,0 10,15A2,2 0 0,0 12,17M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V10C4,8.89 4.9,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z"
+            ></path>
+          </svg>
+        </span>
+        Đổi mật khẩu
+      </p>
+    </header>
+    <div class="p-6">
+      <div class="mb-6 last:mb-0">
+        <label class="text-xs block font-avantGardeSemibold mb-2"
+          >Mật khẩu mới</label
+        >
+        <div class="">
+          <div class="relative">
+            <input
+              class="text-xs focus:border-transparent px-3 py-2 max-w-full focus:ring focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800 pl-10"
+              name="password"
+              autocomplete="new-password"
+              placeholder="Vui lòng nhập mật khẩu mới"
+              type="password"
+            />
+            <span
+              class="inline-flex justify-center items-center w-10 absolute top-2 left-0 z-10 pointer-events-none text-gray-500 dark:text-gray-400"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                class="inline-block"
+              >
+                <path
+                  fill="currentColor"
+                  d="M17,7H22V17H17V19A1,1 0 0,0 18,20H20V22H17.5C16.95,22 16,21.55 16,21C16,21.55 15.05,22 14.5,22H12V20H14A1,1 0 0,0 15,19V5A1,1 0 0,0 14,4H12V2H14.5C15.05,2 16,2.45 16,3C16,2.45 16.95,2 17.5,2H20V4H18A1,1 0 0,0 17,5V7M2,7H13V9H4V15H13V17H2V7M20,15V9H17V15H20M8.5,12A1.5,1.5 0 0,0 7,10.5A1.5,1.5 0 0,0 5.5,12A1.5,1.5 0 0,0 7,13.5A1.5,1.5 0 0,0 8.5,12M13,10.89C12.39,10.33 11.44,10.38 10.88,11C10.32,11.6 10.37,12.55 11,13.11C11.55,13.63 12.43,13.63 13,13.11V10.89Z"
+                ></path>
+              </svg>
+            </span>
           </div>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">
-          <span class="icon"><i class="mdi mdi-lock"></i></span>
-          Change Password
-        </p>
-      </header>
-      <div class="card-content">
-        <form>
-          <div class="field">
-            <label class="label">Current password</label>
-            <div class="control">
-              <input type="password" name="password_current" autocomplete="current-password" class="input" required>
-            </div>
-            <p class="help">Required. Your current password</p>
+      <div class="mb-6 last:mb-0">
+        <label class="text-xs block font-avantGardeSemibold mb-2"
+          >Nhập lại mật khẩu mới</label
+        >
+        <div class="">
+          <div class="relative">
+            <input
+              class="text-xs focus:border-transparent px-3 py-2 max-w-full focus:ring focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800 pl-10"
+              name="password_confirmation"
+              autocomplete="new-password"
+              placeholder="Vui lòng nhập lại mật khẩu mới"
+              type="password"
+            />
+            <span
+              class="inline-flex justify-center items-center w-10 absolute top-2 left-0 z-10 pointer-events-none text-gray-500 dark:text-gray-400"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                class="inline-block"
+              >
+                <path
+                  fill="currentColor"
+                  d="M17,7H22V17H17V19A1,1 0 0,0 18,20H20V22H17.5C16.95,22 16,21.55 16,21C16,21.55 15.05,22 14.5,22H12V20H14A1,1 0 0,0 15,19V5A1,1 0 0,0 14,4H12V2H14.5C15.05,2 16,2.45 16,3C16,2.45 16.95,2 17.5,2H20V4H18A1,1 0 0,0 17,5V7M2,7H13V9H4V15H13V17H2V7M20,15V9H17V15H20M8.5,12A1.5,1.5 0 0,0 7,10.5A1.5,1.5 0 0,0 5.5,12A1.5,1.5 0 0,0 7,13.5A1.5,1.5 0 0,0 8.5,12M13,10.89C12.39,10.33 11.44,10.38 10.88,11C10.32,11.6 10.37,12.55 11,13.11C11.55,13.63 12.43,13.63 13,13.11V10.89Z"
+                ></path>
+              </svg>
+            </span>
           </div>
-          <hr>
-          <div class="field">
-            <label class="label">New password</label>
-            <div class="control">
-              <input type="password" autocomplete="new-password" name="password" class="input" required>
-            </div>
-            <p class="help">Required. New password</p>
-          </div>
-          <div class="field">
-            <label class="label">Confirm password</label>
-            <div class="control">
-              <input type="password" autocomplete="new-password" name="password_confirmation" class="input" required>
-            </div>
-            <p class="help">Required. New password one more time</p>
-          </div>
-          <hr>
-          <div class="field">
-            <div class="control">
-              <button type="submit" class="button green">
-                Submit
-              </button>
-            </div>
-          </div>
-        </form>
+        </div>
+      </div>
+      <hr class="border-gray-100 my-6 -mx-6 dark:border-gray-800 border-t" />
+      <div class="flex items-center justify-start flex-wrap -mb-3">
+        <button
+          class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-2 bg-emerald-600 text-white border-emerald-700 hover:bg-emerald-700 mr-3 last:mr-0 mb-3"
+          type="submit"
+        >
+          <span class="px-2">Cập nhật</span>
+        </button>
       </div>
     </div>
-  </section>
+  </form>
+</section>

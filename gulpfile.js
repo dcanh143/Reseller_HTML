@@ -93,7 +93,7 @@ const concatHtml = (file) => {
 
   const titleStrings = {
     index: "Trang chủ",
-    profile: "Profile",
+    profile: "Đổi mật khẩu",
     login: "Đăng nhập",
     facebookBuffLikePost: "Buff Like Post",
     facebookBuffViewLivestream: "Buff Live",
@@ -136,6 +136,7 @@ const concatHtml = (file) => {
     dvkhac: "Dịch vụ khác",
     price: "Bảng giá",
     loadingMoney: "Nạp tiền",
+    loadingMoneyByCard: "Nạp tiền bằng thẻ điện thoại",
   };
 
   const titleStringsLong = {
@@ -236,6 +237,7 @@ exports.default = series(
     () => concatHtml("dvkhac"),
     () => concatHtml("price"),
     () => concatHtml("loadingMoney"),
+    () => concatHtml("loadingMoneyByCard"),
     processJsMain,
     processJsMainMin,
     processJsChartSample,
