@@ -87,7 +87,7 @@
                 class="focus:border-transparent w-full text-sm border-x border-y h-10 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
               >
               </textarea>
-              <p>Xác nhận mua VIEW với giá 0đ</p>
+              <p>Xác nhận mua FOLLOW với giá 0đ</p>
             </div>
             <hr
               class="border-gray-100 my-6 -mx-6 dark:border-gray-800 border-t"
@@ -129,7 +129,7 @@
                 ></path>
               </svg>
             </span>
-            Instagram Buff View
+            Shopee Sub
           </p>
           <div class="flex items-center justify-start flex-wrap -mb-3 mx-3">
             <button
@@ -162,15 +162,16 @@
             <textarea class="text-xs bg-yellow-500 h-10 w-full resize-none">
             </textarea>
           </div>
-          <div class="grid grid-cols-2 gap-6 mb-6 xl:grid-cols-2">
+          <div class="grid grid-cols-2 gap-6 xl:grid-cols-2">
             <div class="mb-6 last:mb-0">
               <label class="text-xs block font-avantGardeSemibold mb-2"
-                >Instagram post (Điền link)</label
+                >Nhập link shop</label
               >
               <div class="">
                 <div class="relative">
                   <input
                     class="text-xs focus:border-transparent px-3 py-2 max-w-full focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800"
+                    placeholder="Link shop"
                     type="text"
                   />
                 </div>
@@ -178,7 +179,7 @@
             </div>
             <div class="mb-6 last:mb-0">
               <label class="text-xs block font-avantGardeSemibold mb-2"
-                >Nhập số lượng</label
+                >Số lượng</label
               >
               <div class="">
                 <div class="relative">
@@ -190,7 +191,6 @@
               </div>
             </div>
           </div>
-
           <div
             class="text-white px-6 py-4 border-0 relative mb-4 bg-emerald-600"
           >
@@ -211,22 +211,25 @@
                       <div
                         class="inline-flex items-center last:mr-0 capitalize border py-0.5 px-2 text-xs rounded-lg mr-1.5 bg-emerald-600 text-white border-emerald-700"
                       >
-                        <span>0.5đ</span>
-                      </div>
-                    </span>
-                  </label>
-                  <label class="mr-6 mb-3 last:mr-0">
-                    <input type="radio" class="" value="[object Object]" />
-                    <span class="control-label font-avantGardeSemibold mx-4">
-                      Kênh 2
-                      <div
-                        class="inline-flex items-center last:mr-0 capitalize border py-0.5 px-2 text-xs rounded-lg mr-1.5 bg-emerald-600 text-white border-emerald-700"
-                      >
-                        <span>2đ</span>
+                        <span>80đ</span>
                       </div>
                     </span>
                   </label>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6 last:mb-0">
+            <label class="text-xs block font-avantGardeSemibold mb-2"
+              >Ghi chú</label
+            >
+            <div class="">
+              <div class="relative">
+                <textarea
+                  class="text-xs focus:border-transparent px-3 py-2 max-w-full focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none border bg-white dark:bg-gray-800"
+                  placeholder=""
+                >
+                </textarea>
               </div>
             </div>
           </div>
@@ -236,7 +239,7 @@
           <div class="block font-avantGardeSemibold mb-2">
             Thanh toán: <span class="text-blue-500 text-xl">0đ</span> <br />
             Bạn đang mua <span class="text-red-500 text-base">0</span> với giá
-            <span class="text-base">0.5đ</span>
+            <span class="text-base">80đ</span>
           </div>
           <hr
             class="border-gray-100 my-6 -mx-6 dark:border-gray-800 border-t"
@@ -337,7 +340,7 @@
               ></path>
             </svg>
           </span>
-          Lịch sử mua dịch vụ Instagram Buff View
+          Lịch sử mua dịch vụ Shopee Sub
         </p>
       </header>
       <div class="p-6">
@@ -457,7 +460,7 @@
             />
           </label>
           <label class="">
-            Tìm kiếm <span class="font-avantGardeSemibold">ID INSTAGRAM</span>
+            Tìm kiếm <span class="font-avantGardeSemibold">ID SHOPEE</span>
             <input
               id="id_input"
               class="ml-2 border-x border-y w-40 h-8 bg-transparent border-gray-700 rounded dark:placeholder-gray-400 resize-none"
@@ -482,7 +485,7 @@
                 <th class="text-center border-x border-y border-black">
                   Ngày tạo
                 </th>
-                <th class="text-center border-x border-y border-black">ID</th>
+                <th class="text-center border-x border-y border-black">Tên</th>
                 <th class="text-center border-x border-y border-black">
                   Số lượng ban đầu
                 </th>
@@ -522,6 +525,13 @@
                       class="flex items-center justify-start flex-nowrap -mb-3"
                     >
                       <button
+                        class="inline-flex justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-red-600 border-red-700 cursor-not-allowed opacity-50 cursor-not-allowed mr-3 last:mr-0 mb-3"
+                        type="button"
+                        disabled=""
+                      >
+                        <span class="px-2">huỷ đơn</span>
+                      </button>
+                      <button
                         class="inline-flex justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-1 text-emerald-600 border-emerald-700 cursor-not-allowed opacity-50 mr-3 last:mr-0 mb-3"
                         type="button"
                         disabled=""
@@ -541,14 +551,14 @@
                   class="text-center border-x border-y border-black"
                   data-label="Kênh"
                 >
-                  2
+                  1
                 </td>
                 <td
                   class="text-center border-x border-y border-black"
                   data-label="Thời gian"
                 >
-                  05/12/2022, 00:50:53<br />
-                  4 tháng trước
+                  29/12/2022, 03:41:18<br />
+                  3 tháng trước
                 </td>
                 <td
                   class="text-center border-x border-y border-black"
@@ -556,34 +566,34 @@
                 >
                   <a
                     class="text-blue-500"
-                    href="https://instagram.com/CjkHnnbD7tl"
+                    href="https://shopee.vn/phimphim678?categoryId=100632&amp;entryPoint=ShopByPDP&amp;itemId=12597823252"
                     target="_blank"
-                    >CjkHnnbD7tl</a
+                    >PhimPhim - Sỉ phụ kiện mỹ phẫm</a
                   >
                 </td>
                 <td
                   class="text-center border-x border-y border-black"
                   data-label="Số lượng ban đầu"
                 >
-                  483707
+                  3900
                 </td>
                 <td
                   class="text-center border-x border-y border-black"
                   data-label="Số lượng"
                 >
-                  1000
+                  500
                 </td>
                 <td
                   class="text-center border-x border-y border-black"
                   data-label="Đã chạy"
                 >
-                  1000
+                  0
                 </td>
                 <td
                   class="text-center border-x border-y border-black"
                   data-label="Tổng tiền"
                 >
-                  2,000đ
+                  40,000đ
                 </td>
                 <td
                   class="text-center border-x border-y border-black"
@@ -591,7 +601,7 @@
                 >
                   <textarea
                     type="note"
-                    order_code="eZLlStKP1X"
+                    order_code="2wgB4gIO8j"
                     class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
                   >
                   </textarea>
@@ -602,7 +612,7 @@
                 >
                   <textarea
                     type="note_admin"
-                    order_code="eZLlStKP1X"
+                    order_code="2wgB4gIO8j"
                     class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
                   >
                   </textarea>
@@ -613,7 +623,7 @@
                 >
                   <textarea
                     type="notification_from_admin"
-                    order_code="eZLlStKP1X"
+                    order_code="2wgB4gIO8j"
                     class="focus:border-transparent focus:ring-2 text-xs border-x border-y h-11 bg-transparent border-gray-700 dark:placeholder-gray-400 resize-none"
                   >
                   </textarea>
@@ -624,7 +634,7 @@
                   data-label="Trạng thái"
                 >
                   <div
-                    class="inline-flex items-center last:mr-0 capitalize border py-2 px-4 rounded-2xl mr-3 bg-emerald-600 text-white border-emerald-700 whitespace-nowrap"
+                    class="inline-flex items-center last:mr-0 capitalize border py-2 px-4 rounded-2xl mr-3 bg-red-600 text-white border-red-700 whitespace-nowrap"
                   >
                     <span
                       class="inline-flex justify-center items-center w-4 h-4 mr-2"
@@ -637,12 +647,16 @@
                       >
                         <path
                           fill="currentColor"
-                          d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
+                          d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M16,10V17A1,1 0 0,1 15,18H9A1,1 0 0,1 8,17V10H16M13.5,6L14.5,7H17V9H7V7H9.5L10.5,6H13.5Z"
                         ></path>
                       </svg>
                     </span>
-                    <span>Thành công</span>
+                    <span>Thất bại</span>
                   </div>
+                  <p>
+                    (đã hoàn
+                    <span class="font-avantGardeSemibold">40,000đ</span> )
+                  </p>
                 </td>
               </tr>
             </tbody>
