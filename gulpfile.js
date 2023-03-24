@@ -137,6 +137,7 @@ const concatHtml = (file) => {
     price: "Bảng giá",
     loadingMoney: "Nạp tiền",
     loadingMoneyByCard: "Nạp tiền bằng thẻ điện thoại",
+    activityLog: "Nhật ký hoạt động",
   };
 
   const titleStringsLong = {
@@ -238,6 +239,7 @@ exports.default = series(
     () => concatHtml("price"),
     () => concatHtml("loadingMoney"),
     () => concatHtml("loadingMoneyByCard"),
+    () => concatHtml("activityLog"),
     processJsMain,
     processJsMainMin,
     processJsChartSample,
