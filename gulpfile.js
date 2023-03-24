@@ -138,6 +138,8 @@ const concatHtml = (file) => {
     loadingMoney: "Nạp tiền",
     loadingMoneyByCard: "Nạp tiền bằng thẻ điện thoại",
     activityLog: "Nhật ký hoạt động",
+    childSite: "Quản lý Website",
+    userManagement: "Quản lý User",
   };
 
   const titleStringsLong = {
@@ -240,6 +242,8 @@ exports.default = series(
     () => concatHtml("loadingMoney"),
     () => concatHtml("loadingMoneyByCard"),
     () => concatHtml("activityLog"),
+    () => concatHtml("childSite"),
+    () => concatHtml("userManagement"),
     processJsMain,
     processJsMainMin,
     processJsChartSample,

@@ -1,0 +1,422 @@
+<section class="px-0 md:px-6 py-6 text-sm">
+  <ul class="flex flex-wrap justify-center xl:justify-start -mb-px">
+    <li class="mb-2">
+      <button
+        id="btn-tao-tien-trinh"
+        class="btn-tao-tien-trinh inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-2 bg-red-600 text-white border-red-700 hover:bg-red-700 hover:text-white"
+        type="button"
+        outline-none=""
+        content=" order"
+      >
+        <span class="px-2">Thêm Site</span>
+      </button>
+    </li>
+    <li class="mb-2 ml-3">
+      <button
+        id="btn-lich-su-mua-dich-vu"
+        class="btn-lich-su-mua-dich-vu inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-2 text-emerald-600 border-emerald-700 hover:bg-emerald-700 hover:text-white"
+        type="button"
+        content="history"
+      >
+        <span class="px-2">Thêm ngân hàng</span>
+      </button>
+    </li>
+  </ul>
+  <div id="tao-tien-trinh" style="display: block">
+    <div class="flex flex-col gap-4 xl:flex-row">
+      <div class="w-auto xl:mt-4 xl:mb-4 xl:w-8/12">
+        <div
+          class="md:rounded border-gray-100 dark:bg-gray-900/70 bg-white mx-3 xl:mx-0 border dark:border-gray-800"
+        >
+          <header
+            class="border-gray-100 flex text-black items-stretch border-b dark:border-gray-800"
+          >
+            <p class="flex items-center py-3 grow font-avantGardeSemibold px-6">
+              Tích hợp API
+            </p>
+          </header>
+          <div class="p-6">
+            <div class="mb-6">
+              <p>Địa chỉ IP trỏ tên miền</p>
+              <p>Chú ý trỏ tên miền site đại lý về đúng IP phía dưới</p>
+            </div>
+            <div
+              class="mb-6 bg-emerald-100 text-center p-3 text-2xl text-emerald-500 font-avantGardeBold"
+            >
+              <p>NS arya.ns.cloudflare.com</p>
+              <p>NS ivan.ns.cloudflare.com</p>
+            </div>
+            <div
+              class="mb-6 text-center p-2 bg-gray-100 font-avantGardeBold text-red-500"
+            >
+              <p>Nghiêm cấm các tên miền có chứa facebook và instagram</p>
+              <p>
+                Để tránh bị Facebook và Instagram kiện vì vi phạm bản quyền.
+              </p>
+            </div>
+            <div class="overflow-x-auto scroll-smooth">
+              <table
+                vi=""
+                id="myTable"
+                class="text-xs border-x border-y border-black text-center"
+              >
+                <thead class="border-x border-y bg-neutral-200 border-black">
+                  <tr class="border-x border-y border-black">
+                    <th class="text-center border-x border-y border-black">
+                      Thao tác
+                    </th>
+                    <th class="text-center border-x border-y border-black">
+                      Tên miền
+                    </th>
+                    <th class="text-center border-x border-y border-black">
+                      Trạng thái
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="border-x border-y border-black text-center">
+                  <tr class="xl:hover:bg-gray-100">
+                    <td class="border-x border-y border-black text-center"></td>
+                    <td class="border-x border-y border-black text-center">
+                      test.atteam.me
+                    </td>
+                    <td class="border-x border-y border-black text-center">
+                      <div
+                        class="inline-flex items-center last:mr-0 capitalize border py-2 px-4 rounded-2xl mr-3 bg-emerald-600 text-white border-emerald-700 whitespace-nowrap"
+                      >
+                        <span>Đã duyệt</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="xl:hover:bg-gray-100">
+                    <td class="border-x border-y border-black text-center">
+                      <button
+                        class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-2 bg-emerald-600 text-white border-emerald-700 hover:bg-emerald-700 font-avantGardeSemibold"
+                        type="button"
+                      >
+                        <span class="px-2">Duyệt</span>
+                      </button>
+                    </td>
+                    <td class="border-x border-y border-black text-center">
+                      ctv.atteam.me
+                    </td>
+                    <td class="border-x border-y border-black text-center">
+                      <div
+                        class="inline-flex items-center last:mr-0 capitalize border py-2 px-4 rounded-2xl mr-3 bg-yellow-600 text-white border-yellow-700 whitespace-nowrap"
+                      >
+                        <span>Đang chờ duyệt</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="xl:hover:bg-gray-100">
+                    <td class="border-x border-y border-black text-center"></td>
+                    <td class="border-x border-y border-black text-center">
+                      daily.atteam.me
+                    </td>
+                    <td class="border-x border-y border-black text-center">
+                      <div
+                        class="inline-flex items-center last:mr-0 capitalize border py-2 px-4 rounded-2xl mr-3 bg-emerald-600 text-white border-emerald-700 whitespace-nowrap"
+                      >
+                        <span>Đã duyệt</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="xl:hover:bg-gray-100">
+                    <td class="border-x border-y border-black text-center"></td>
+                    <td class="border-x border-y border-black text-center">
+                      localhost
+                    </td>
+                    <td class="border-x border-y border-black text-center">
+                      <div
+                        class="inline-flex items-center last:mr-0 capitalize border py-2 px-4 rounded-2xl mr-3 bg-emerald-600 text-white border-emerald-700 whitespace-nowrap"
+                      >
+                        <span>Đã duyệt</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-x border-y border-black text-center"
+                    style="display: none"
+                  ></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="border-gray-100 p-3 border-t dark:border-gray-800">
+              <div class="justify-between items-center block md:flex">
+                <div
+                  class="flex shrink-0 grow-0 items-center justify-center mb-6 md:mb-0"
+                >
+                  <div class="flex items-center justify-start flex-wrap -mb-3">
+                    <button
+                      class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring ring-black dark:ring-white p-1 bg-white text-black border-gray-300 hover:bg-gray-50 mr-3 last:mr-0 mb-3"
+                      type="button"
+                    >
+                      <span class="px-2">1</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="flex shrink-0 grow-0 items-center justify-center">
+                  <small>Page 1 of 1</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden xl:block xl:w-4/12 xl:mt-4 xl:mb-4">
+        <div
+          class="md:rounded border-gray-100 dark:bg-gray-900/70 bg-white mx-3 xl:mx-0 border dark:border-gray-800"
+        >
+          <header
+            class="border-gray-100 flex text-black items-stretch border-b dark:border-gray-800"
+          >
+            <p class="flex items-center py-3 grow font-avantGardeSemibold px-6">
+              Báo cáo
+            </p>
+          </header>
+          <div class="p-6">
+            <div class="grid gap-2 w-auto xl:gap-6 grid-cols-2 grid-rows-2">
+              <div
+                class="md:rounded border-gray-100 dark:bg-gray-900/70 bg-white mx-3 xl:mx-0 border dark:border-gray-800 xl:shadow-lg border-none shadow-md xl:border-x xl:border-y w-auto"
+              >
+                <div class="p-6">
+                  <div class="justify-between items-center flex">
+                    <div
+                      class="flex shrink-0 grow-0 items-center justify-center"
+                    >
+                      <div>
+                        <h3
+                          class="text-xs leading-tight text-gray-500 dark:text-gray-400"
+                        ></h3>
+                        <h1
+                          class="text-xs leading-tight font-avantGardeSemibold"
+                        >
+                          <span>ADMIN</span>
+                        </h1>
+                      </div>
+                    </div>
+                    <div
+                      class="flex shrink-0 grow-0 items-center justify-center"
+                    >
+                      <span
+                        class="inline-flex justify-center items-center h-10"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          width="16"
+                          height="16"
+                          class="inline-block"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M16 17V19H2V17S2 13 9 13 16 17 16 17M12.5 7.5A3.5 3.5 0 1 0 9 11A3.5 3.5 0 0 0 12.5 7.5M15.94 13A5.32 5.32 0 0 1 18 17V19H22V17S22 13.37 15.94 13M15 4A3.39 3.39 0 0 0 13.07 4.59A5 5 0 0 1 13.07 10.41A3.39 3.39 0 0 0 15 11A3.5 3.5 0 0 0 15 4Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="md:rounded border-gray-100 dark:bg-gray-900/70 bg-white mx-3 xl:mx-0 border dark:border-gray-800 xl:shadow-lg border-none shadow-md xl:border-x xl:border-y w-auto"
+              >
+                <div class="p-6">
+                  <div class="justify-between items-center flex">
+                    <div
+                      class="flex shrink-0 grow-0 items-center justify-center"
+                    >
+                      <div>
+                        <h3
+                          class="text-xs leading-tight text-gray-500 dark:text-gray-400"
+                        >
+                          Tài khoản
+                        </h3>
+                        <h1
+                          class="text-xs leading-tight font-avantGardeSemibold"
+                        >
+                          <div>247,556đ</div>
+                        </h1>
+                      </div>
+                    </div>
+                    <div
+                      class="flex shrink-0 grow-0 items-center justify-center"
+                    >
+                      <span
+                        class="inline-flex justify-center items-center h-10 text-emerald-500"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          width="16"
+                          height="16"
+                          class="inline-block"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="md:rounded border-gray-100 dark:bg-gray-900/70 bg-white mx-3 xl:mx-0 border dark:border-gray-800 xl:shadow-lg border-none shadow-md xl:border-x xl:border-y w-auto"
+              >
+                <div class="p-6">
+                  <div class="justify-between items-center flex">
+                    <div
+                      class="flex shrink-0 grow-0 items-center justify-center"
+                    >
+                      <div>
+                        <h3
+                          class="text-xs leading-tight text-gray-500 dark:text-gray-400"
+                        >
+                          Tổng nạp
+                        </h3>
+                        <h1
+                          class="text-xs leading-tight font-avantGardeSemibold"
+                        >
+                          <div>0đ</div>
+                        </h1>
+                      </div>
+                    </div>
+                    <div
+                      class="flex shrink-0 grow-0 items-center justify-center"
+                    >
+                      <span
+                        class="inline-flex justify-center items-center h-10 text-blue-500"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          width="16"
+                          height="16"
+                          class="inline-block"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M20 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H20A2 2 0 0 0 22 18V6A2 2 0 0 0 20 4M20 11H4V8H20Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="md:rounded border-gray-100 dark:bg-gray-900/70 bg-white mx-3 xl:mx-0 border dark:border-gray-800 xl:shadow-lg border-none shadow-md xl:border-x xl:border-y w-auto"
+              >
+                <div class="p-6">
+                  <div class="justify-between items-center flex">
+                    <div
+                      class="flex shrink-0 grow-0 items-center justify-center"
+                    >
+                      <div>
+                        <h3
+                          class="text-xs leading-tight text-gray-500 dark:text-gray-400"
+                        >
+                          Hàng tháng
+                        </h3>
+                        <h1
+                          class="text-xs leading-tight font-avantGardeSemibold"
+                        >
+                          <div>0đ</div>
+                        </h1>
+                      </div>
+                    </div>
+                    <div
+                      class="flex shrink-0 grow-0 items-center justify-center"
+                    >
+                      <span
+                        class="inline-flex justify-center items-center h-10 text-red-500"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          width="16"
+                          height="16"
+                          class="inline-block"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M13 19C13 18.66 13.04 18.33 13.09 18H3V12H19V13C19.7 13 20.37 13.13 21 13.35V6C21 4.89 20.11 4 19 4H3C1.89 4 1 4.89 1 6V18C1 19.1 1.89 20 3 20H13.09C13.04 19.67 13 19.34 13 19M3 6H19V8H3V6M17.75 22L15 19L16.16 17.84L17.75 19.43L21.34 15.84L22.5 17.25L17.75 22"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="lich-su-mua-dich-vu" style="display: none">
+    <div
+      class="md:rounded border-gray-100 dark:bg-gray-900/70 bg-white mx-3 xl:mx-0 border dark:border-gray-800"
+    >
+      <header
+        class="border-gray-100 flex text-black items-stretch border-b dark:border-gray-800"
+      >
+        <p class="flex items-center py-3 grow font-avantGardeSemibold px-6">
+          Thêm ngân hàng
+        </p>
+      </header>
+      <div class="p-6">
+        <div class="grid grid-cols-2 gap-6 mb-3">
+          <div class="mb-6 last:mb-0">
+            <label class="text-xs block font-avantGardeSemibold mb-2"
+              >Tên ngân hàng</label
+            >
+            <div class="">
+              <div class="relative">
+                <input
+                  class="text-xs focus:border-transparent px-3 py-2 max-w-full focus:ring focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-6 mb-3">
+          <div class="mb-6 last:mb-0">
+            <label class="text-xs block font-avantGardeSemibold mb-2"
+              >Tên tài khoản</label
+            >
+            <div class="">
+              <div class="relative">
+                <input
+                  class="text-xs focus:border-transparent px-3 py-2 max-w-full focus:ring focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-6 mb-3">
+          <div class="mb-6 last:mb-0">
+            <label class="text-xs block font-avantGardeSemibold mb-2"
+              >Số tài khoản</label
+            >
+            <div class="">
+              <div class="relative">
+                <input
+                  class="text-xs focus:border-transparent px-3 py-2 max-w-full focus:ring focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-gray-100 my-6 -mx-6 dark:border-gray-800 border-t" />
+        <button
+          class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors duration-150 border ring-0 p-2 bg-emerald-600 text-white border-emerald-700 hover:bg-emerald-700"
+          type="button"
+        >
+          <span class="px-2">Thêm ngân hàng</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
