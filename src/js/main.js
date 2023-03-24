@@ -95,16 +95,24 @@ Array.from(document.getElementsByClassName("btn-tao-tien-trinh")).forEach(
       var s = document.getElementById("tao-tien-trinh");
       var ss = document.getElementById("lich-su-mua-dich-vu");
       var btn = document.getElementById("btn-lich-su-mua-dich-vu");
-      if (s.style.display == "none") {
-        s.style.display = "block";
-        e.currentTarget.classList.add("text-white");
-        e.currentTarget.classList.add("bg-red-600");
-        e.currentTarget.classList.remove("text-red-600");
+      var sss = document.getElementById("lich-su-giao-dich");
+
+      if (ss.style.display == "block") {
         ss.style.display = "none";
         btn.classList.add("text-emerald-600");
         btn.classList.remove("bg-emerald-700");
         btn.classList.remove("text-white");
+      } else if (sss.style.display == "block") {
+        sss.style.display = "none";
+        btn = document.getElementById("btn-lich-su-giao-dich");
+        btn.classList.add("text-red-600");
+        btn.classList.remove("bg-red-700");
+        btn.classList.remove("text-white");
       }
+      s.style.display = "block";
+      e.currentTarget.classList.add("text-white");
+      e.currentTarget.classList.add("bg-red-600");
+      e.currentTarget.classList.remove("text-red-600");
     });
   }
 );
@@ -115,17 +123,52 @@ Array.from(document.getElementsByClassName("btn-lich-su-mua-dich-vu")).forEach(
       var s = document.getElementById("tao-tien-trinh");
       var ss = document.getElementById("lich-su-mua-dich-vu");
       var btn = document.getElementById("btn-tao-tien-trinh");
+      var sss = document.getElementById("lich-su-giao-dich");
 
       if (s.style.display == "block") {
         s.style.display = "none";
         btn.classList.remove("text-white");
         btn.classList.remove("bg-red-600");
         btn.classList.add("text-red-600");
-        ss.style.display = "block";
-        e.currentTarget.classList.remove("text-emerald-600");
-        e.currentTarget.classList.add("bg-emerald-700");
-        e.currentTarget.classList.add("text-white");
+      } else if (sss.style.display == "block") {
+        sss.style.display = "none";
+        btn = document.getElementById("btn-lich-su-giao-dich");
+        btn.classList.remove("text-white");
+        btn.classList.remove("bg-red-600");
+        btn.classList.add("text-red-600");
       }
+      ss.style.display = "block";
+      e.currentTarget.classList.remove("text-emerald-600");
+      e.currentTarget.classList.add("bg-emerald-700");
+      e.currentTarget.classList.add("text-white");
+    });
+  }
+);
+
+Array.from(document.getElementsByClassName("btn-lich-su-giao-dich")).forEach(
+  (elA) => {
+    elA.addEventListener("click", (e) => {
+      var s = document.getElementById("tao-tien-trinh");
+      var ss = document.getElementById("lich-su-mua-dich-vu");
+      var btn = document.getElementById("btn-tao-tien-trinh");
+      var sss = document.getElementById("lich-su-giao-dich");
+
+      if (s.style.display == "block") {
+        s.style.display = "none";
+        btn.classList.remove("text-white");
+        btn.classList.remove("bg-red-600");
+        btn.classList.add("text-red-600");
+      } else if (ss.style.display == "block") {
+        ss.style.display = "none";
+        btn = document.getElementById("btn-lich-su-mua-dich-vu");
+        btn.classList.remove("text-white");
+        btn.classList.remove("bg-emerald-700");
+        btn.classList.add("text-emerald-600");
+      }
+      sss.style.display = "block";
+      e.currentTarget.classList.add("text-white");
+      e.currentTarget.classList.add("bg-red-600");
+      e.currentTarget.classList.remove("text-red-600");
     });
   }
 );

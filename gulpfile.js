@@ -92,11 +92,9 @@ const concatHtml = (file) => {
   sources.push("src/html/parts/bottom.html");
 
   const titleStrings = {
-    tables: "Tables",
     index: "Trang chủ",
-    forms: "Forms",
     profile: "Profile",
-    login: "Login",
+    login: "Đăng nhập",
     facebookBuffLikePost: "Buff Like Post",
     facebookBuffViewLivestream: "Buff Live",
     facebookBuffLikeCmt: "Buff Like Comment",
@@ -136,6 +134,8 @@ const concatHtml = (file) => {
     ttBuffSub: "Twitter Sub/Follow",
     ttBuffView: "Twitter View",
     dvkhac: "Dịch vụ khác",
+    price: "Bảng giá",
+    loadingMoney: "Nạp tiền",
   };
 
   const titleStringsLong = {
@@ -234,6 +234,8 @@ exports.default = series(
     () => concatHtml("ttBuffSub"),
     () => concatHtml("ttBuffView"),
     () => concatHtml("dvkhac"),
+    () => concatHtml("price"),
+    () => concatHtml("loadingMoney"),
     processJsMain,
     processJsMainMin,
     processJsChartSample,
