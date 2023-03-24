@@ -128,6 +128,8 @@ const concatHtml = (file) => {
     ytBuffWatch: "Youtube Giờ Xem",
     ytBuffLike: "Youtube Like",
     ytBuffCmt: "Youtube Comment",
+    tlBuffView: "Telegram View",
+    tlBuffMember: "Telegram Member",
   };
 
   const titleStringsLong = {
@@ -218,6 +220,8 @@ exports.default = series(
     () => concatHtml("ytBuffWatch"),
     () => concatHtml("ytBuffLike"),
     () => concatHtml("ytBuffCmt"),
+    () => concatHtml("tlBuffView"),
+    () => concatHtml("tlBuffMember"),
     processJsMain,
     processJsMainMin,
     processJsChartSample,
