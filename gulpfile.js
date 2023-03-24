@@ -135,6 +135,7 @@ const concatHtml = (file) => {
     ttBuffLike: "Twitter Like",
     ttBuffSub: "Twitter Sub/Follow",
     ttBuffView: "Twitter View",
+    dvkhac: "Dịch vụ khác",
   };
 
   const titleStringsLong = {
@@ -232,6 +233,7 @@ exports.default = series(
     () => concatHtml("ttBuffLike"),
     () => concatHtml("ttBuffSub"),
     () => concatHtml("ttBuffView"),
+    () => concatHtml("dvkhac"),
     processJsMain,
     processJsMainMin,
     processJsChartSample,
