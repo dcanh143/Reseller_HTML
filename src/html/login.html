@@ -1,63 +1,94 @@
-  <section class="section main-section">
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">
-          <span class="icon"><i class="mdi mdi-lock"></i></span>
-          Login
-        </p>
-      </header>
-      <div class="card-content">
-        <form method="get">
-
-          <div class="field spaced">
-            <label class="label">Login</label>
-            <div class="control icons-left">
-              <input class="input" type="text" name="login" placeholder="user@example.com" autocomplete="username">
-              <span class="icon is-small left"><i class="mdi mdi-account"></i></span>
-            </div>
-            <p class="help">
-              Please enter your login
-            </p>
+<section
+  class="px-0 md:px-6 py-6 flex min-h-screen items-center justify-center bg-gradient-to-tr from-purple-400 via-pink-500 to-red-500 text-xs mb-3"
+>
+  <div
+    class="vue-notification-template vue-notification success right-0 top-0 mt-2 w-1/2 text-white p-4 bg-green-500"
+    style="display: block; position: fixed; z-index: 5000"
+  >
+    <div class="font-avantGardeSemibold mb-1">Thành công</div>
+    <div class="notification-content">Thay đổi thông báo thành công</div>
+  </div>
+  <form
+    class="rounded-lg border-gray-100 dark:bg-gray-900/70 bg-white mx-3 xl:mx-0 border dark:border-gray-800 w-11/12 md:w-7/12 shadow-2xl"
+  >
+    <div class="p-6">
+      <div class="mb-6 last:mb-0">
+        <label class="text-xs block font-avantGardeSemibold mb-2"
+          >Tên đăng nhập</label
+        >
+        <div class="">
+          <div class="relative">
+            <input
+              class="text-xs focus:border-transparent focus:ring px-3 py-2 max-w-full focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800 h-12 pl-10"
+              name="phoneNumber"
+              autocomplete="username"
+              placeholder="Vui lòng nhập tên đăng nhập"
+              type="text"
+            />
+            <span
+              class="inline-flex justify-center items-center w-10 h-12 absolute -top-2 left-0 z-10 pointer-events-none text-gray-500 dark:text-gray-400"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                class="inline-block"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
+                ></path>
+              </svg>
+            </span>
           </div>
-
-          <div class="field spaced">
-            <label class="label">Password</label>
-            <p class="control icons-left">
-              <input class="input" type="password" name="password" placeholder="Password" autocomplete="current-password">
-              <span class="icon is-small left"><i class="mdi mdi-asterisk"></i></span>
-            </p>
-            <p class="help">
-              Please enter your password
-            </p>
+        </div>
+      </div>
+      <div class="mb-6 last:mb-0">
+        <label class="text-xs block font-avantGardeSemibold mb-2"
+          >Mật khẩu</label
+        >
+        <div class="">
+          <div class="relative">
+            <input
+              class="text-xs focus:border-transparent focus:ring px-3 py-2 max-w-full focus:ring-emerald-600 border-gray-700 w-full dark:placeholder-gray-400 resize-none h-9 border bg-white dark:bg-gray-800 pl-10"
+              name="password"
+              autocomplete="current-password"
+              placeholder="Vui lòng nhập mật khẩu"
+              type="password"
+            />
+            <span
+              class="inline-flex justify-center items-center w-10 h-12 absolute -top-2 left-0 z-10 pointer-events-none text-gray-500 dark:text-gray-400"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                class="inline-block"
+              >
+                <path
+                  fill="currentColor"
+                  d="M21 13H14.4L19.1 17.7L17.7 19.1L13 14.4V21H11V14.3L6.3 19L4.9 17.6L9.4 13H3V11H9.6L4.9 6.3L6.3 4.9L11 9.6V3H13V9.4L17.6 4.8L19 6.3L14.3 11H21V13Z"
+                ></path>
+              </svg>
+            </span>
           </div>
-
-          <div class="field spaced">
-            <div class="control">
-              <label class="checkbox"><input type="checkbox" name="remember" value="1" checked>
-                <span class="check"></span>
-                <span class="control-label">Remember</span>
-              </label>
-            </div>
-          </div>
-
-          <hr>
-
-          <div class="field grouped">
-            <div class="control">
-              <button type="submit" class="button blue">
-                Login
-              </button>
-            </div>
-            <div class="control">
-              <a href="index.html" class="button">
-                Back
-              </a>
-            </div>
-          </div>
-
-        </form>
+        </div>
+      </div>
+      <hr class="border-gray-100 my-6 -mx-6 dark:border-gray-800 border-t" />
+      <div class="flex items-center justify-start flex-wrap -mb-3">
+        <button
+          class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors focus:ring duration-150 border ring-0 p-2 bg-emerald-600 text-white border-emerald-700 hover:bg-emerald-700 mr-3 last:mr-0 mb-3"
+          type="submit"
+        >
+          <span class="px-2">Đăng nhập</span>
+        </button>
+        <a
+          class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap transition-colors focus:ring duration-150 border ring-0 p-2 text-emerald-600 border-emerald-700 hover:bg-emerald-700 hover:text-white mr-3 last:mr-0 mb-3"
+          disabled="false"
+        >
+          <span class="px-2">Đăng ký</span>
+        </a>
       </div>
     </div>
-
-  </section>
-
+  </form>
+</section>
